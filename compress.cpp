@@ -184,7 +184,7 @@ std::vector<uint8_t> MsoCompressLZW(std::span<uint8_t> const &input)
         bitIndex = outData.size() * 8;
     };
 
-    MSOLZWDICT dictionary[4096];
+    MSOLZWDICT dictionary[4097];
 
     for (int i = 0; i < 256; i++)
     {
